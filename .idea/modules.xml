@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/XFGO.iml" filepath="$PROJECT_DIR$/XFGO.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/xfgo.iml" filepath="$PROJECT_DIR$/xfgo.iml" />
     </modules>
   </component>
 </project>

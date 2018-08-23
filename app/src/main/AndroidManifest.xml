@@ -13,10 +13,10 @@
             android:value="true"/>
         <meta-data
             android:name="xposeddescription"
-            android:value="FGO Hook"/>
+            android:value="B服fgo过sign验证"/>
         <meta-data
             android:name="xposedminversion"
-            android:value="72"/>
+            android:value="54"/>
     </application>
 
 </manifest>
