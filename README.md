@@ -7,6 +7,8 @@ Fate/Grand Order B服过sign检测Xposed模块
 
 ## 说明
 
+本模块工作原理为修改验证函数返回值，开启本模块后则必须使用科技，否则报201。
+
 B服FGO经测试无法在VirtualXposed中运行，并非本模块造成的问题。
 
 Android版本需求: >=4.2.2
@@ -28,3 +30,9 @@ Xposed API需求: >=54
     "sign": ""
 }
 ```
+
+## 科技服务端代码参考
+
+AnyProxy版: [https://github.com/locbytes/FGO_AnyProxy](https://github.com/locbytes/FGO_AnyProxy)
+
+Fiddler版: [https://github.com/locbytes/FGO_FiddlerScript](https://github.com/locbytes/FGO_FiddlerScript)
