@@ -19,7 +19,7 @@ Xposed API需求: >=54
 
 经测试可以通过[Magisk](https://forum.xda-developers.com/apps/magisk)以框中框的方式来使用本模块。
 
-因加入了撤退胜利的数据处理逻辑，导致需要使用JSONArray类，要求Android API最低为API-19，故将min SDK API更改为API-19。
+因加入了撤退胜利的数据处理逻辑，导致需要使用JSONArray类，要求Android SDK最低为API-19，故将min SDK更改为API-19。
 
 Android版本低于4.4.2的用户只能使用v1.1版的模块，即只能修改战斗数据，而无法使用撤退胜利。
 
