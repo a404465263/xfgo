@@ -13,7 +13,7 @@
             android:value="true"/>
         <meta-data
             android:name="xposeddescription"
-            android:value="B服fgo过sign验证"/>
+            android:value="b服fgo过sign验证、撤退胜利"/>
         <meta-data
             android:name="xposedminversion"
             android:value="54"/>
