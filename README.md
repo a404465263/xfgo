@@ -5,6 +5,8 @@ Fate/Grand Order b服过sign检测xposed模块
 
 如有任何问题请提交issue，我会及时进行回复。
 
+核心代码 [Main.java](https://github.com/locbytes/xfgo/blob/master/app/src/main/java/com/locbytes/xfgo/Main.java)
+
 ## 说明
 
 **本模块工作原理为修改验证函数返回值或传入参数，开启本模块后则必须使用科技，否则报201。**
