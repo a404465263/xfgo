@@ -33,8 +33,6 @@ public class Main implements IXposedHookLoadPackage {
                         // result
                         //XposedBridge.log(dataArray[12]);
                         JSONObject jsonObject = new JSONObject(dataArray[12].substring(7));
-                        //XposedBridge.log(jsonObject.get("battleResult").toString());
-                        //XposedBridge.log(jsonObject.get("aliveUniqueIds").toString());
 
                         StringBuilder newRequestData = new StringBuilder();
 
@@ -50,10 +48,7 @@ public class Main implements IXposedHookLoadPackage {
                             JSONArray aliveUniqueIds = jsonObject.getJSONArray("aliveUniqueIds");
                             // aliveUniqueIds=[] 敌方无存活
                             aliveUniqueIds = new JSONArray();
-                            //XposedBridge.log(aliveUniqueIds.toString());
                             jsonObject.put("aliveUniqueIds",aliveUniqueIds);
-                            //XposedBridge.log(jsonObject.get("battleResult").toString());
-                            //XposedBridge.log(jsonObject.get("aliveUniqueIds").toString());
                             //XposedBridge.log(jsonObject.toString());
                             dataArray[12]="result="+jsonObject.toString();
                             //XposedBridge.log(dataArray[12]);
@@ -65,8 +60,6 @@ public class Main implements IXposedHookLoadPackage {
                                 }
                                 ++i;
                             }
-                            //XposedBridge.log(requestData);
-                            //XposedBridge.log(newRequestData.toString());
                         }else{
                             battleCancel=false;
                         }
@@ -74,6 +67,7 @@ public class Main implements IXposedHookLoadPackage {
                         if(battleCancel){
                             param.args[1]=newRequestData.toString();
                         }
+
                     }
                     super.beforeHookedMethod(param);
                 }
@@ -83,10 +77,6 @@ public class Main implements IXposedHookLoadPackage {
                     if(param.args[1].toString().contains("battle_setup")||param.args[1].toString().contains("battle_resume")){
                         //XposedBridge.log("Battle Setup/Resume");
                         param.setResult("");
-                    }
-                    if(param.args[1].toString().contains("battleresult")) {
-                        XposedBridge.log(param.args[1].toString());
-                        XposedBridge.log(param.getResult().toString());
                     }
                     super.afterHookedMethod(param);
                 }
