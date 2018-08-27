@@ -51,13 +51,13 @@ v1.1版：[https://github.com/locbytes/xfgo/releases/tag/v1.1](https://github.co
 
 拆分数据，获得`result`的value值，该值为一个json字符串。
 
-对该json数据进行处理，有如下数据需要修改
+对该json数据进行处理，有如下数据需要修改，参数意义请参考模块代码中的注释
 
 ```json
 {
-    "battleResult": 1,       // 胜利 Number
-    "elapsedTurn": 11,       // 回合数为11 Number
-    "aliveUniqueIds": []     // 无存活敌方 Array
+    "battleResult": 1,
+    "elapsedTurn": 11,
+    "aliveUniqueIds": []
 }
 ```
 
